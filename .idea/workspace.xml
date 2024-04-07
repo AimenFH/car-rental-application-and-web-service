@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="765610f8-f037-4cae-82ee-515bdb1b0b60" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/application-car rental-services/service/src/main/java/stud/fhcampuswien/ac/at/carRental/service/ApplicationExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-car rental-services/service/src/main/java/stud/fhcampuswien/ac/at/carRental/service/ServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-car rental-services/service/src/main/java/stud/fhcampuswien/ac/at/carRental/service/entity/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-car rental-services/service/src/main/java/stud/fhcampuswien/ac/at/carRental/service/entity/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-car rental-services/service/src/main/java/stud/fhcampuswien/ac/at/carRental/service/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-car rental-services/service/src/main/java/stud/fhcampuswien/ac/at/carRental/service/exception/CustomerNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-car rental-services/service/src/main/java/stud/fhcampuswien/ac/at/carRental/service/exception/EntityNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-car rental-services/service/src/main/java/stud/fhcampuswien/ac/at/carRental/service/exception/ErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-car rental-services/service/src/main/java/stud/fhcampuswien/ac/at/carRental/service/exception/InvoiceNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-car rental-services/service/src/main/java/stud/fhcampuswien/ac/at/carRental/service/repository/CarRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-car rental-services/service/src/main/java/stud/fhcampuswien/ac/at/carRental/service/repository/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-car rental-services/service/src/main/java/stud/fhcampuswien/ac/at/carRental/service/repository/InvoiceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-car rental-services/service/src/main/java/stud/fhcampuswien/ac/at/carRental/service/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-car rental-services/service/src/main/java/stud/fhcampuswien/ac/at/carRental/service/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-car rental-services/service/src/main/java/stud/fhcampuswien/ac/at/carRental/service/security/SecurityConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-car rental-services/service/src/main/java/stud/fhcampuswien/ac/at/carRental/service/security/filter/AuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-car rental-services/service/src/main/java/stud/fhcampuswien/ac/at/carRental/service/security/filter/ExceptionHandlerFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-car rental-services/service/src/main/java/stud/fhcampuswien/ac/at/carRental/service/security/filter/JWTAuthorizationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-car rental-services/service/src/main/java/stud/fhcampuswien/ac/at/carRental/service/security/manager/CustomAuthenticationManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-car rental-services/service/src/main/java/stud/fhcampuswien/ac/at/carRental/service/service/CarService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-car rental-services/service/src/main/java/stud/fhcampuswien/ac/at/carRental/service/service/CarServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-car rental-services/service/src/main/java/stud/fhcampuswien/ac/at/carRental/service/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-car rental-services/service/src/main/java/stud/fhcampuswien/ac/at/carRental/service/service/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-car rental-services/service/src/main/java/stud/fhcampuswien/ac/at/carRental/service/service/InvoiceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-car rental-services/service/src/main/java/stud/fhcampuswien/ac/at/carRental/service/service/InvoiceServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-car rental-services/service/src/main/java/stud/fhcampuswien/ac/at/carRental/service/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-car rental-services/service/src/main/java/stud/fhcampuswien/ac/at/carRental/service/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-car rental-services/service/src/main/java/stud/fhcampuswien/ac/at/carRental/service/web/CarController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-car rental-services/service/src/main/java/stud/fhcampuswien/ac/at/carRental/service/web/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-car rental-services/service/src/main/java/stud/fhcampuswien/ac/at/carRental/service/web/InvoiceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application-car rental-services/service/src/main/java/stud/fhcampuswien/ac/at/carRental/service/web/UserController.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2eIbewROySmWVJqqOMFUFZpszwW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore_missing_gitignore": "true",
+    "last_opened_file_path": "H:/Git/car-rental-application-and-web-service/application-car rental-services/service",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="765610f8-f037-4cae-82ee-515bdb1b0b60" name="Changes" comment="" />
+      <created>1711595137754</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1711595137754</updated>
+      <workItem from="1711595139533" duration="135000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
