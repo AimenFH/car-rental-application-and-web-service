@@ -1,0 +1,27 @@
+<nz-spin [nzSpinning]="isSpinning" [nzSize]="'large'" nzTip="Working...">
+    <nz-table #basicTable [nzData]="bookedCars" [nzPageSize]="20" [nzShowPagination]="'false'">
+        <thead>
+            <tr>
+                <th style="font-weight: bolder; color: #003973;">From</th>
+                <th style="font-weight: bolder; color: #003973;">To</th>
+                <th style="font-weight: bolder; color: #003973;">Days</th>
+                <th style="font-weight: bolder; color: #003973;">Price</th>
+                <th style="font-weight: bolder; color: #003973;">Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let booking of bookedCars">
+                <td>{{booking.fromDate | date: 'MMM d, y'}}</td>
+                <td>{{booking.toDate | date: 'MMM d, y'}}</td>
+                <td>{{booking.days}}</td>
+                <td>{{booking.amount}}</td>
+                <td>
+                    <strong
+                        [ngStyle]="{'color': booking.bookCarStatus === 'APPROVED' ? 'green' : booking.bookCarStatus === 'REJECTED' ? 'blue' : 'red'}">
+                        {{ booking.bookCarStatus }}
+                    </strong>
+                </td>
+            </tr>
+        </tbody>
+    </nz-table>
+</nz-spin>

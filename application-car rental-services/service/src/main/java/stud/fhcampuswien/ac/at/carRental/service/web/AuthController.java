@@ -60,7 +60,7 @@ public class AuthController {
 	@Autowired
 	RefreshTokenService refreshTokenService;
 
-	@Autowired
+
 	UserService userService;
 
 	@PostMapping("/signup")
