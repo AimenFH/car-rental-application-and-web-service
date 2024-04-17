@@ -40,18 +40,12 @@ export class SignupComponent {
   signup() {
     console.log(this.signupForm.value);
     this.authService.register(this.signupForm.value).subscribe((res) => {
-      console.log("Response:" + res);
-      if(res.id !=null){
-        this.message.success("signup sucessful", { nzDuration: 5000 });
-        this.router.navigateByUrl("/login").then(r => true);
-      }
-      else {
-        this.message.error(res.error, { nzDuration: 5000 });
-      }
-    })
+        console.log("Response:" + res);
+        if (res.id != null) {
+          this.message.success("signup sucessful", {nzDuration: 5000});
+          this.router.navigateByUrl("/login").then(r => true);
+        }
+      },error => {this.message.error('Email already exist. Try again with another email', { nzDuration: 5000 });}
+    )
   }
-
-
-
-
 }
