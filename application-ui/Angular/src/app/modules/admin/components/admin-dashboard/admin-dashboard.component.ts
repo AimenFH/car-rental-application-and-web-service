@@ -13,7 +13,6 @@ export class AdminDashboardComponent {
 
   constructor(private adminService: AdminService,
     private message: NzMessageService) {;
-    this.getAllCars();
   }
 
   ngOnInit(){

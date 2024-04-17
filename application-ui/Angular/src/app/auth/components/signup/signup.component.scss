@@ -1,58 +1,97 @@
 [nz-form] {
-    max-width: 600px;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background: white;
 }
 
 .phone-select {
-    width: 70px;
+  width: 100px; // Adjusted for better usability
 }
 
-.register-are {
-    margin-bottom: 8px;
+.register-area { // Corrected class name typo from 'register-are'
+  margin-bottom: 12px; // Increased for better spacing
 }
 
 .child {
-    padding: 50px;
-    position: absolute;
-    width: 380px;
-    background-color: white;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 1px 1px 15px -7px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    margin-bottom: 22px;
-
+  padding: 40px; // Adjusted padding for a balanced look
+  position: absolute;
+  width: 90%; // Responsive width
+  max-width: 450px; // Ideal for forms
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.12); // Softer shadow for subtle depth
+  border-radius: 10px; // Rounded corners for modern look
 }
 
 nz-form-control {
-    min-width: 280px;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px; // Adds space between form controls
 }
 
 .parent {
-    width: 100%;
-    height: 91vh;
-    position: relative;
+  width: 100%;
+  height: 100vh; // Full viewport height
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; // Centers the child vertically and horizontally
+  background: linear-gradient(to right, #eef2f3, #8e9eab); // Soft gradient for a professional look
 }
 
 .login-form-margin {
-    margin-bottom: 16px;
+  margin-bottom: 20px; // Increased for visual separation
 }
 
 .login-form-forgot {
-    float: right;
+  float: right;
+  color: #007bff;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .login-form-button {
-    width: 100%;
+  width: 100%;
+  padding: 12px;
+  background-color: #0056b3; // Professional and thematic color
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: #003a70;
+  }
 }
 
 button {
-    background-color: #001529;
-    border: none;
+  background-color: #001529;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+  &:hover {
+    background-color: #000911; // Darker on hover for contrast
+  }
 }
 
 .imgDiv {
-    width: 100%;
-    vertical-align: middle;
-    margin-bottom: 40px;
+  width: 100%;
+  vertical-align: middle;
+  margin-bottom: 40px;
+  img {
+    width: 100%; // Ensures image is responsive
+    height: auto;
+    border-radius: 8px; // Rounded edges for images
+  }
 }

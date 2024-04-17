@@ -14,20 +14,19 @@
                             <input nz-input placeholder="E-mail" id="email" formControlName="email" />
                         </nz-form-control>
                     </nz-form-item>
-
                     <nz-form-item>
-                        <nz-form-control nzHasFeedback [nzErrorTip]="errorPass">
+                        <nz-form-control nzHasFeedback nzErrorTip="Please input  Password, more than 7 char!">
                             <input nz-input placeholder="Password" type="password" id="password"
                                 formControlName="password" />
-                            <ng-template #errorPass let-control>
-                                <ng-container *ngIf="control.hasError('required')">
-                                    Password Is Required!
-                                </ng-container>
-                                <ng-container *ngIf="control.hasError('pattern')">
-                                    Password Should Conatins 8 Characters,1 Lowercase, 1 Uppercase, 1 Number and 1
-                                    Special character
-                                </ng-container>
-                            </ng-template>
+<!--                            <ng-template #errorPass let-control>-->
+<!--                                <ng-container *ngIf="control.hasError('required')">-->
+<!--                                  Please input  Password, more than 7 char!-->
+<!--                                </ng-container>-->
+<!--&lt;!&ndash;                                <ng-container *ngIf="control.hasError('pattern')">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    Password Should Conatins 8 Characters,1 Lowercase, 1 Uppercase, 1 Number and 1&ndash;&gt;-->
+<!--&lt;!&ndash;                                    Special character&ndash;&gt;-->
+<!--&lt;!&ndash;                                </ng-container>&ndash;&gt;-->
+<!--                            </ng-template>-->
                         </nz-form-control>
                     </nz-form-item>
 

@@ -2,6 +2,7 @@ package FHCampus.CarRental.entities;
 
 import FHCampus.CarRental.dtos.BookACarDto;
 import FHCampus.CarRental.enums.BookCarStatus;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
@@ -20,8 +21,10 @@ public class BookACar {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @JsonFormat(pattern = "yyyy/MM/dd")
     private Date fromDate;
 
+    @JsonFormat(pattern = "yyyy/MM/dd")
     private Date toDate;
 
     @NotBlank

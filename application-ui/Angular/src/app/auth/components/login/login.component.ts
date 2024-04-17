@@ -4,6 +4,7 @@ import { AuthService } from '../../services/auth/auth.service';
 import { StorageService } from '../../services/storage/storage.service';
 import { NzMessageService } from "ng-zorro-antd/message";
 import { Router } from '@angular/router';
+import {EMPTY} from "rxjs";
 
 @Component({
   selector: 'app-login',
@@ -23,7 +24,7 @@ export class LoginComponent {
   ngOnInit() {
     this.loginform = this.fb.group({
       email: [null, [Validators.required, Validators.email]],
-      password: [null, [Validators.required]]
+      password: [null, [Validators.required ,Validators.minLength(7)]]
     })
   }
 
@@ -34,7 +35,7 @@ export class LoginComponent {
       if (res.userId != null) {
         const user = {
           id: res.userId,
-          role: res.userRole
+          role: res.userRol
         }
         StorageService.saveToken(res.jwt);
         StorageService.saveUser(user);
@@ -42,10 +43,9 @@ export class LoginComponent {
           this.router.navigateByUrl("/admin/dashboard");
         else
           this.router.navigateByUrl("/customer/dashboard");
-      } else {
-        this.message.error("Bad credentials", { nzDuration: 5000 })
       }
-    })
+    },
+      error => {this.message.error("Bad credentials", { nzDuration: 5000 })}
+    )
   }
-
 }
