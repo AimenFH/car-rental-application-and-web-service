@@ -56,6 +56,4 @@ export class StorageService {
     window.localStorage.removeItem(USER);
     window.localStorage.removeItem(TOKEN);
   }
-
-
 }

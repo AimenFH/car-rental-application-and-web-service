@@ -1,27 +1,35 @@
-
-
 .custom-navbar {
-    background-color: black;
+  background-color: #007bff; // This is a common shade of blue used in web design.
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; // Added padding for better visual spacing
+  height: 60px; // Fixed height for a uniform look
+
+  .navbar-title {
+    a {
+      color: white !important;
+      margin-left: 10px;
+      font-size: 18px;
+      font-weight: bolder;
+      text-decoration: none; // Remove underline from links
+      &:hover {
+        color: #ccc; // Lighter color on hover for visual feedback
+      }
+    }
+  }
+
+  .nav-links {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 
-    .navbar-title {
-        >a {
-            color: white !important;
-            margin-left: 10px;
-            font-size: 18px;
-            font-weight: bolder;
-        }
+    a {
+      color: white;
+      margin-left: 15px;
+      text-decoration: none; // Remove underline from links
+      &:hover {
+        color: #ccc; // Lighter color on hover to indicate interactivity
+      }
     }
-
-    .nav-links {
-        display: flex;
-        align-items: center;
-
-        a {
-            color: white;
-            margin-left: 15px;
-        }
-    }
+  }
 }
