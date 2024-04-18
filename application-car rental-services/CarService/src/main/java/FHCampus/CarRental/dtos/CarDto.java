@@ -28,4 +28,10 @@ public class CarDto {
 
     private byte[] returnedImage;
 
+    public CarDto(String testCar, String ford, String blue, int i, String suv, String manual, String number, String description, byte[] bytes) {
+    }
+
+    public CarDto() {
+
+    }
 }
