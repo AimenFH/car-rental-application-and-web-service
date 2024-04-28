@@ -13,6 +13,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgZorroModule } from "./NgZorroModule";
+import { LandingPageComponent } from './auth/components/landing-page/landing-page.component';
+import { ErrorPageComponent } from './auth/components/error-page/error-page.component';
 
 
 
@@ -23,7 +25,9 @@ registerLocaleData(en);
   declarations: [
     AppComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    LandingPageComponent,
+    ErrorPageComponent
   ],
   imports: [
     BrowserModule,
