@@ -10,6 +10,6 @@ application = Application([CurrencyConverterService], 'urn:currency_converter',
 
 if __name__ == '__main__':
     wsgi_application = WsgiApplication(application)
-    server = make_server('127.0.0.1', 8000, wsgi_application)
-    print("SOAP server starting on http://127.0.0.1:8000...")
+    server = make_server('0.0.0.0', 8000, wsgi_application)
+    print("SOAP server starting...")
     server.serve_forever()
