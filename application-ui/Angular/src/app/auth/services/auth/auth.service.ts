@@ -18,5 +18,4 @@ export class AuthService {
   login(loginRequest: any): Observable<any> {
     return this.http.post(BASIC_URL + "/api/auth/v1/login", loginRequest);
   }
-
 }
