@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { StorageService } from 'src/app/auth/services/storage/storage.service';
 
 
-const BASIC_URL = ["http://localhost:8080"];
+const BASIC_URL = ["https://car-rental-mono.azurewebsites.net"];
 
 @Injectable({
   providedIn: 'root'
