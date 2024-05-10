@@ -61,3 +61,32 @@ h2:hover {
     padding-bottom: 20px;
     margin-top: 20px;
 }
+
+.currencym {
+  text-align: center; /* Center align the text inside the div */
+  padding: 30px; /* Padding for inner spacing */
+  background-color: #ffffff; /* White background for the container */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 400px; /* Set a max width for better appearance */
+  width: 90%; /* Responsive width */
+
+  h1 {
+    font-size: 24px; /* Larger font size for the heading */
+    color: #333; /* Dark text color */
+    margin-bottom: 20px; /* Space below the heading */
+    padding: 0 10px; /* Padding for responsive heading */
+  }
+}
+
+/* Style for the .currency class */
+.currency {
+  padding-top: 10px;
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold; /* Make the label text bold */
+    color: #333; /* Dark text color */
+  }
+}

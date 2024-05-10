@@ -1,15 +1,5 @@
 <div style="background-color: #F8F8F8; min-height: 91vh;">
 
-  <!-- Currency Selection Dropdown -->
-  <div style="padding-top: 10px;">
-    <label for="currency-select">Select Currency:</label>
-    <select id="currency-select" [(ngModel)]="selectedCurrency" (change)="onCurrencyChange()">
-      <option value="USD">USD</option>
-      <option value="EUR">EUR</option>
-      <option value="GBP">GBP</option>
-      <option value="JPY">JPY</option>
-    </select>
-  </div>
 
   <!-- Car Listings -->
   <div style="margin-top: 10px;" class="child" *ngFor="let car of cars">
@@ -35,4 +25,19 @@
       </div>
     </div>
   </div>
+
+  <div *ngIf="isVisible" nz-row class="currencym">
+    <h1> Please choose your currency  </h1>
+  <!-- Currency Selection Dropdown -->
+  <div style="padding-top: 10px;"  class="currency">
+    <label for="currency-select">Select Currency:</label>
+    <select id="currency-select" [(ngModel)]="selectedCurrency" (change)="onCurrencyChange()">
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+      <option value="GBP">GBP</option>
+      <option value="JPY">JPY</option>
+    </select>
+  </div>
+  </div>
 </div>
+
