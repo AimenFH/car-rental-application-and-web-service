@@ -2,8 +2,8 @@ from zeep import Client
 from zeep.exceptions import Fault, TransportError, XMLSyntaxError
 
 
-WSDL_URL = 'http://127.0.0.1:8000/?wsdl'
-
+WSDL_URL_LOCAL = 'http://127.0.0.1:8000/?wsdl'
+WSDL_URL = 'https://soap-currency-converter.azurewebsites.net/?wsdl'
 
 def convert_currency(from_currency, to_currency, amount):
     try:
